@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class vehicle{
+ public static void main(String[]args){
+       Scanner scan=new Scanner(System.in);
+       int T=scan.nextInt();
+     for(int i=0;i<T;i++){
+       int v=scan.nextInt();
+       int w=scan.nextInt();
+        if(w<2*v || w>4*v || w%2!=0){
+            System.out.println(-1);
+             continue;
+}
+   int x=(4*v-w)/2;
+   int y=v-x;
+   if(x>=0 && y>=0){
+      System.out.println(x+" "+y);
+}else{
+      System.out.println(-1);
+}
+}
+
+
+}    
+}
