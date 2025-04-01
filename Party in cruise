@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class party {
+public static void main(String[]args){
+  Scanner sc=new Scanner(System.in);
+  int T=sc.nextInt();
+ 
+  int []E=new int[5];
+  int []L=new int[5];
+  
+  int i;
+  int j;
+  for(i=0;i<E.length;i++){
+       E[i]=sc.nextInt();
+        }
+  for(j=0;j<L.length;j++){
+       L[j]=sc.nextInt();
+   }
+ int currentguest=0;
+ int maxguest=0;
+ for(int t=0;t<T;t++){
+       currentguest+=E[t]-L[t];
+    if(currentguest>maxguest){
+        maxguest=currentguest;
+        }
+}
+
+System.out.println(maxguest);
+}
+}
