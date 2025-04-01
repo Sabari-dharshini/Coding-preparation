@@ -13,7 +13,7 @@ int zerocount=0;
                         a[zerocount++]=a[i];
                         }
                     }
-               if(zerocount<N){
+               while(zerocount<N){
                    a[zerocount++]=0;
                   }
              for(int num : a){
