@@ -1,0 +1,25 @@
+import java .util.Scanner;
+public class hash{
+ public static void main(String[]args
+      Scanner sc=new Scanner(System.i
+       String s=sc.nextLine();
+       int starcount=0;
+       int hashcount=0;
+       for(int i=0;i<s.length();i++){
+              if(s.charAt(i)=='*'){
+                starcount++;
+              }else{
+                 hashcount++;
+              }
+         }
+if(starcount==hashcount){
+    System.out.println(0);
+}else if(starcount>hashcount){
+     System.out.println(1);
+ }else{
+       System.out.println(-1);
+}
+}
+}
+
+        
