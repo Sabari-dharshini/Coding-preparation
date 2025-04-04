@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class theatre{
+public static void main(String[]args){
+Scanner sc=new Scanner(System.in);
+System.out.print("Enter no of pizzas bought : ");
+int p=sc.nextInt();
+System.out.print("Enter no of puffs bought : ");
+int f=sc.nextInt();
+System.out.print("Enter no of cooldrinks bought : ");
+int c=sc.nextInt();
+int pp=100;
+int fp=20;
+int cp=10;
+int tp=(p*pp)+(f*fp)+(c*cp);
+
+System.out.println("BILL DETAILS");
+System.out.println("No of pizzas : "+p);
+System.out.println("No of puffs : "+f);
+System.out.println("No of cooldrinks : "+c);
+System.out.println("Total price : "+tp);
+System.out.println("ENJOY THE SHOW !!!");
+
+    
+}
+}
+ 
