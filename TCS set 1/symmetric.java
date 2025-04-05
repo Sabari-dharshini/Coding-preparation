@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class Symmetric{
+    public static void main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int [][]arr=new int[n][2];
+        for(int i=0;i<arr.length;i++){
+             arr[i][0]=sc.nextInt();
+             arr[i][1]=sc.nextInt();
+         }
+         for(int i=0;i<arr.length;i++){
+              int a=arr[i][0];
+              int b=arr[i][1];
+         for(int j=i+1;j<arr.length;j++){
+              int c=arr[j][0];
+              int d=arr[j][1];
+         if(a==d && b==c){
+             System.out.println("{"+a+","+b+"}");
+             break;
+        }
+}
+}
+}
+}
