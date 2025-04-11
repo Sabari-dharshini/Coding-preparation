@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Main{
+public static void main(String[]args){
+Scanner sc=new Scanner(System.in);
+int n=sc.nextInt();
+String octal="";
+if(n==0){
+octal="0";
+}else{
+int temp=n;
+while(temp>0){
+int rem=temp%8;
+octal=rem+octal;
+temp=temp/8;
+}
+}
+System.out.println("Octal of " +n+  " is : "+octal);
+}
+}
