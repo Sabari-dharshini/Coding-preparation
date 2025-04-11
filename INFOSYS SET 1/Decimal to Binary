@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Main{
+public static void main(String[]args){
+Scanner sc=new Scanner(System.in);
+int n=sc.nextInt();
+String binary="";
+if(n==0){
+binary="0";
+}else{
+int temp=n;
+while(temp>0){
+int rem=temp%2;
+binary=rem+binary;
+temp=temp/2;
+}
+}
+System.out.println("Binary of " +n+  " is : "+binary);
+}
+}
