@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class NonRepeat{
+public static void main(String[]args){
+Scanner sc=new Scanner(System.in);
+String s=sc.nextLine();
+
+int count=0;
+for(int i=0;i<s.length();i++){
+char c=s.charAt(i);
+ boolean isRepeating=false;
+   for(int j=0;j<s.length();j++){
+          if(i!=j && c==s.charAt(j)){
+                isRepeating=true;
+                break;
+              }
+          
+}
+if(!isRepeating){
+    System.out.println("The non repeating element : "+c);
+     return;
+}
+}
+ System.out.println("No non-repeating character found");
+}
+}
