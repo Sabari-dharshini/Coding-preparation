@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class Fact{
+public static void main(String[]args){
+Scanner sc=new Scanner(System.in);
+int number=sc.nextInt();
+long factorial=get(number);
+System.out.println(factorial);
+}
+public static long get(int n){
+  if (n == 0 || n == 1) {
+            return 1;
+        }
+        
+        return n * get(n - 1);
+    }
+}
