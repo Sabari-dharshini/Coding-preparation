@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class Otod{
+public static void main(String[]args){
+Scanner sc=new Scanner(System.in);
+String octal=sc.nextLine();
+int decimal=0;
+int power=1;
+for(int i=octal.length()-1;i>=0;i--){
+char o=octal.charAt(i);
+int digit=o-'0';
+decimal+=digit*power;
+power*=8;
+}
+System.out.println("Decimal : "+decimal);
+}
+}
