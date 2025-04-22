@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class bitwiseAnd{
+ public static void main(String[]args){
+   Scanner sc=new Scanner(System.in);
+    int m=5;
+    int n=7;
+    int shift=0;
+    while(m!=n){
+         m>>=1;
+         n>>=1;
+         shift++;
+        }
+   int result=m<<shift;
+  System.out.println("Bitwise AND range from " +m+ "to" +n+ "are : "+result);
+}
+}
+
