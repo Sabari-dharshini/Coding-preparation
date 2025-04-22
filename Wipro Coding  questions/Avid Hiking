@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class hiking{
+public static void main(String[]args){
+ Scanner sc=new Scanner(System.in);
+ int n=sc.nextInt();
+ String s=sc.next();
+ int valleys=0;
+ int elevation=0;
+ for(int i=0;i<n;i++){
+     char c=s.charAt(i);
+     if(c=='U'){
+        elevation++;
+      
+     if(elevation==0){
+        valleys++;
+       }
+     }
+     else{
+         elevation--;
+      }
+}
+        System.out.println(valleys);
+}
+}
